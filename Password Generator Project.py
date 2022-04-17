@@ -20,8 +20,9 @@ for i in range(0,nr_numbers):
 
 for i in range(0,nr_symbols):
     s+=random.choice(symbols)
-print("Password: ", s)
-#hard level
+print("Password in order: ", s)
+#hard level: order randomised
+#e.g. 4 letter, 2 symbol, 2 number = 1e9s&Jd
 password = []#declaring list variable
 for i in range(0,nr_letters):
     password+=random.choice(letters)#choice to choose random letters
@@ -30,7 +31,7 @@ for i in range(0,nr_numbers):
 
 for i in range(0,nr_symbols):
     password.append(random.choice(symbols))#append is same as + but at last
-print("Password in sequence: ", password)
+# print("Password in sequence: ", password)
 random.shuffle(password)
 t=''
 for i in password:
